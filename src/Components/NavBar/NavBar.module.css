@@ -1,0 +1,20 @@
+.nav {
+    grid-area: nav;
+    background-color: #1f1f25;
+    display: grid;
+    grid-template-rows: repeat(5, 35px);
+    grid-gap: 15px;
+    padding: 25px 25px;
+    border-radius: 20px;
+}
+
+.nav__link {
+    cursor: pointer;
+    color: aliceblue;
+    font-size: 20px;
+    text-decoration: none;
+
+    &:hover {
+        color: #6495EDFF;
+    }
+}

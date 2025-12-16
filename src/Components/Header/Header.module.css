@@ -1,0 +1,21 @@
+.header {
+    grid-area: header;
+    background-color: #1f1f25;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.header__logo {
+    height: 40px;
+    pointer-events: none;
+    animation: header__logo-spin infinite 20s linear;
+}
+
+@keyframes header__logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

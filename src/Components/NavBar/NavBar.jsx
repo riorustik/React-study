@@ -7,6 +7,8 @@ export function NavBar() {
             <div><a href="#"
                     className={styles.nav__link}>Profile</a></div>
             <div><a href="#"
+                    className={styles.nav__link}>Messages</a></div>
+            <div><a href="#"
                     className={styles.nav__link}>News</a></div>
             <div><a href="#"
                     className={styles.nav__link}>Music</a></div>

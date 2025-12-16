@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./Profile.module.css";
+import {AddPost} from "./AddPost/AddPost";
 
 export function Profile() {
     return (
@@ -9,17 +10,7 @@ export function Profile() {
             <div>
                 ava + description
             </div>
-            <div>
-                my post
-                <div>
-                    new post
-                </div>
-                <div>
-                    <div>post 1</div>
-                    <div>post 2</div>
-                    <div>post 3</div>
-                </div>
-            </div>
+            <AddPost/>
         </main>
     )
 }

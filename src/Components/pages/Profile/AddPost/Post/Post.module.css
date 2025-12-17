@@ -1,10 +1,10 @@
 .post{
     display: grid;
     grid-template-rows: 1fr 30px;
-
+    background-color: aqua;
+  margin-bottom: 25px;
 }
 .news{
-    background-color: aqua;
 }
 .image{
     width: 50px;

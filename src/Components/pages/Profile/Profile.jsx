@@ -4,13 +4,13 @@ import {AddPost} from "./AddPost/AddPost";
 
 export function Profile() {
     return (
-        <main className={style.profile}>
+        <section className={style.profile}>
             <div className={style.profile__poster}>
             </div>
             <div>
                 ava + description
             </div>
             <AddPost/>
-        </main>
+        </section>
     )
 }

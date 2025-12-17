@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./Post.module.css";
-import {ButtonPost} from "./ButtonPost/ButtonPost";
+import {ButtonPost} from "../../../../Buttons/ButtonPost/ButtonPost";
 
 export function Post({textPost, likeCount}) {
     return (

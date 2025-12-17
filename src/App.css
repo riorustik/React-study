@@ -20,3 +20,8 @@ body {
     "header header"
     "nav main";
 }
+
+.App-content{
+    grid-area: main;
+    background-color: #6495EDFF;
+}

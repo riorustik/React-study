@@ -1,8 +1,6 @@
 .profile {
     display: grid;
-    grid-area: main;
     width: 100%;
-    background-color: #6495EDFF;
     grid-template-columns: 100%;
     grid-template-rows: 250px 150px auto;
 }

@@ -1,0 +1,16 @@
+.posts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+.newPost {
+
+}
+.postsList{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 300px);
+    grid-gap: 10px;
+
+}

@@ -10,7 +10,7 @@ body {
 .App-wrapper {
     width: 80%;
     margin: 0 auto;
-    height: 100vh;
+    /*min-height: 100vh;*/
     display: grid;
     grid-template-columns: 2fr 10fr;
     grid-template-rows: 60px auto;
@@ -24,4 +24,10 @@ body {
 .App-content{
     grid-area: main;
     background-color: #6495EDFF;
+    background-color: #ffffff;
+
+    border-radius: 20px;
+    /*display: grid;*/
+    /*grid-template-columns: 1fr;*/
+    /*grid-auto-rows: 1fr;*/
 }

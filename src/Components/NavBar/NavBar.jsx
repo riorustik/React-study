@@ -16,7 +16,7 @@ export function NavBar() {
         <nav className={styles.nav}>
             <div><Link to="/Profile"   //navlink obsolete
                     className={`${styles.navLink}`}>Profile</Link></div>
-            <div><Link to="Messages"
+            <div><Link to="/Messages"
                     className={styles.navLink}>Messages</Link></div>
             <div><Link to="News"
                     className={styles.navLink}>News</Link></div>

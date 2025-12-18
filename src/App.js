@@ -13,9 +13,11 @@ function App() {
                 <NavBar/>
                 <main className='App-content'>
                     <Routes>
-                        <Route path='Profile'
+                        <Route path='/Profile'
                                element={<Profile />}/>
-                        <Route path='Messages'
+                        <Route path='/Messages'
+                               element={<Messages />}/>
+                        <Route path='/Messages/:id'
                                element={<Messages />}/>
                     </Routes>
                 </main>

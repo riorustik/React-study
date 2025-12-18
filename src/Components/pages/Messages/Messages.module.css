@@ -1,0 +1,16 @@
+.messages{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    grid-column-gap: 20px;
+}
+.dialogs{
+
+    & div{
+        margin-bottom: 10px;
+        background-color: #ff7926;
+    }
+}
+.dialog{
+    background-color: #3C82F8;
+}

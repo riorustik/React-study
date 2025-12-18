@@ -13,11 +13,26 @@ export function AddPost() {
                 <button>sent</button>
             </div>
             <section className={style.postsList}>
-                <Post likeCount={10} textPost='My first Post!'/>
-                <Post likeCount={15} textPost='Hello my friends!'/>
-                <Post likeCount={5} textPost='Hello my friends!'/>
-                <Post likeCount={17} textPost='Hello my friends!'/>
-                <Post likeCount={23} textPost='Hello my friends!'/>
+                <Post likeCount={10}
+                      textPost='My first Post!'/>
+                <Post likeCount={15}
+                      textPost='Hello my friends!'/>
+                <Post likeCount={5}
+                      textPost='Hello my friends!'/>
+                <Post likeCount={17}
+                      textPost='Hello my friends!'/>
+                <Post likeCount={23}
+                      textPost='Hello my friends!'/>
+                <Post likeCount={23}
+                      textPost='Hello my friends!'/>
+                <Post likeCount={23}
+                      textPost='Hello my friends!'/>
+                <Post likeCount={23}
+                      textPost='Hello my friends!'/>
+                <Post likeCount={23}
+                      textPost='Hello my friends!'/>
+                <Post likeCount={23}
+                      textPost='Hello my friends!'/>
             </section>
         </section>
     )

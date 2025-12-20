@@ -2,7 +2,7 @@ import './App.css';
 import {Header} from "./Components/Header/Header";
 import {NavBar} from "./Components/NavBar/NavBar";
 import {Profile} from "./Components/pages/Profile/Profile";
-import {Messages} from "./Components/pages/Messages/Messages";
+import {Chats} from "./Components/pages/Chats/Chats";
 import {BrowserRouter, Route, Routes} from "react-router";
 
 function App() {
@@ -13,12 +13,14 @@ function App() {
                 <NavBar/>
                 <main className='App-content'>
                     <Routes>
+                        <Route path='/'
+                               element={<Profile />}/>
                         <Route path='/Profile'
                                element={<Profile />}/>
-                        <Route path='/Messages'
-                               element={<Messages />}/>
-                        <Route path='/Messages/:id'
-                               element={<Messages />}/>
+                        <Route path='/Chats'
+                               element={<Chats />}/>
+                        <Route path='/Chats/:id'
+                               element={<Chats />}/>
                     </Routes>
                 </main>
             </div>

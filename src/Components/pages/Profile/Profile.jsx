@@ -5,7 +5,7 @@ import {AddPost} from "./AddPost/AddPost";
 export function Profile() {
     return (
         <section className={style.profile}>
-            <div>
+            <div    >
                 ava + description
             </div>
             <AddPost/>

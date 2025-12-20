@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./Chats.module.css";
 import {Chat} from "./Chat/Chat"
+import {Message} from "./Message/Message";
 
 export function Chats() {
     return (
@@ -17,9 +18,9 @@ export function Chats() {
             <div className={style.dialog}>
                 <h3>Dialog</h3>
 
-                <div>Hi</div>
-                <div>How are you??</div>
-                <div>Do you free seven 0'clock?</div>
+                <Message message='Hi'/>
+                <Message message='How are you?'/>
+                <Message message="Do you free seven 0'clock? "/>
             </div>
         </section>
     )

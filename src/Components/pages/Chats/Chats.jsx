@@ -4,23 +4,35 @@ import {Chat} from "./Chat/Chat"
 import {Message} from "./Message/Message";
 
 export function Chats() {
+
+    let chatsData = [
+        {id: 1, name: 'Дмитрий'},
+        {id: 2, name: 'Рустам'},
+        {id: 3, name: 'Максим'},
+        {id: 4, name: 'Андрей'}
+    ]
+
+    let messagesData = [
+        {id: 1, message: 'Hi'},
+        {id: 2, message: 'How are you?'},
+        {id: 3, message: 'Do you free seven 0\'clock?'},
+    ]
+
     return (
         <section className={style.messages}>
             <div className={style.dialogs}>
                 <h3>Dialogs</h3>
+                {
+                    chatsData.map(obj => <Chat name={obj.name} id={obj.id}/>)
+                }
 
-                <Chat name='Дмитрий' number='1'/>
-                <Chat name='Рустам' number='2'/>
-                <Chat name='Максим' number='3'/>
-                <Chat name='Андрей' number='4'/>
-                <Chat name='Владислав' number='5'/>
             </div>
             <div className={style.dialog}>
                 <h3>Dialog</h3>
 
-                <Message message='Hi'/>
-                <Message message='How are you?'/>
-                <Message message="Do you free seven 0'clock? "/>
+                {
+                    messagesData.map(obj => <Message message={obj.message} id={obj.id}/>)
+                }
             </div>
         </section>
     )

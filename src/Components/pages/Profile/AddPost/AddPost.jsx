@@ -3,6 +3,20 @@ import {Post} from "./Post/Post";
 import style from "./AddPost.module.css";
 
 export function AddPost() {
+
+
+    let postsData = [
+        {id: 1, message: 'Hi', likesCount: 23},
+        {id: 2, message: 'How are you?', likesCount: 4},
+        {id: 2, message: 'How are you?', likesCount: 4},
+
+        {id: 2, message: 'How are you?', likesCount: 4},
+        {id: 2, message: 'How are you?', likesCount: 4},
+        {id: 2, message: 'How are you?', likesCount: 4},
+        {id: 2, message: 'How are you?', likesCount: 4},
+
+    ]
+
     return (
         <section className={style.posts}>
             <h2>
@@ -13,26 +27,9 @@ export function AddPost() {
                 <button>sent</button>
             </div>
             <section className={style.postsList}>
-                <Post likeCount={10}
-                      textPost='My first Post!'/>
-                <Post likeCount={15}
-                      textPost='Hello my friends!'/>
-                <Post likeCount={5}
-                      textPost='Hello my friends!'/>
-                <Post likeCount={17}
-                      textPost='Hello my friends!'/>
-                <Post likeCount={23}
-                      textPost='Hello my friends!'/>
-                <Post likeCount={23}
-                      textPost='Hello my friends!'/>
-                <Post likeCount={23}
-                      textPost='Hello my friends!'/>
-                <Post likeCount={23}
-                      textPost='Hello my friends!'/>
-                <Post likeCount={23}
-                      textPost='Hello my friends!'/>
-                <Post likeCount={23}
-                      textPost='Hello my friends!'/>
+                {
+                    postsData.map(obj => <Post likeCount={postsData.likesCount} textPost={postsData.message}/>)
+                }
             </section>
         </section>
     )

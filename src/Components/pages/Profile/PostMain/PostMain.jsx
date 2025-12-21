@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./PostMainPage.module.css";
+import style from "./PostMain.module.css";
 
 export function PostMain({styleName, description, image, title}) {
     return (

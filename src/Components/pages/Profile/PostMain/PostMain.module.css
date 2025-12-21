@@ -5,14 +5,16 @@
     flex-direction: column;
     height: 100%;
     padding: 15px;
-    & h1{
+
+    & h1 {
         color: #dcf92f;
     }
 
-    & p{
+    & p {
         color: white;
     }
-    img{
+
+    img {
         width: 100%;
         object-fit: cover;
     }
@@ -23,7 +25,8 @@
 
     grid-area: verticalArticle;
     background-image: url("../../../../image/background-profile-box-left.png");
-    img{
+
+    img {
         height: 300px;
     }
 }
@@ -31,24 +34,24 @@
 .bottomLeftArticle {
     grid-area: bottomLeftArticle;
     background-image: url("../../../../image/background-profile-box.png");
-    img{
+
+    img {
         height: 250px;
     }
 }
 
 .bottomRightArticle {
-    /*display: flex;*/
-    /*align-items: end;*/
     text-align: right;
     grid-area: bottomRightArticle;
     background-image: url("../../../../image/background-profile-box-left.png");
     background-position: center;
-    img{
+
+    img {
         height: 250px;
     }
 
 }
 
-.postDescription{
+.postDescription {
     height: 70%;
 }

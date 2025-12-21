@@ -2,15 +2,16 @@
     grid-area: nav;
 
     position: fixed;
-    bottom: 24px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
 
-    width: 350px;
-    height: 68px;
-    padding: 6px 25px;
+    width: 68px;
+    height: 350px;
+    padding: 25px 6px;
 
     display: flex;
+    flex-direction: column;
     gap: 6px;
     justify-content: space-around;
     align-items: center;
@@ -37,10 +38,11 @@ i{
     outline: none;
     text-decoration: none;
     flex: 1;
-    height: 100%;
+    width: 100%;
     border-radius: 34px;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 

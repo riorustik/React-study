@@ -12,7 +12,7 @@ export function NavBar() {
             <Link to="News"
                   className={styles.navLink}><i className="fa-solid fa-newspaper"></i></Link>
             <Link to="Music"
-                  className={styles.navLink}><i class="fa-solid fa-headphones"></i></Link>
+                  className={styles.navLink}><i className="fa-solid fa-headphones"></i></Link>
             <Link to="Settings"
                   className={styles.navLink}><i className="fa-solid fa-gear"></i></Link>
         </nav>

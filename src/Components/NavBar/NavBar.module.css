@@ -17,7 +17,7 @@
 
     border-radius: 50px;
 
-    background: rgba(255, 255, 255, 0.22);
+    background: rgba(68, 68, 68, 0.22);
     backdrop-filter: blur(18px) saturate(180%);
     -webkit-backdrop-filter: blur(18px) saturate(180%);
 
@@ -29,7 +29,7 @@
             0 12px 30px rgba(0, 0, 0, 0.18);
 }
 i{
-    color: #9fa19c;
+    color: #ffffff;
     font-size: 25px;
 }
 
@@ -81,30 +81,4 @@ i{
     &:hover {
         transform: translateY(-2px);
     }
-/*    cursor: pointer;*/
-/*    color: aliceblue;*/
-/*    font-size: 20px;*/
-/*    text-decoration: none;*/
-
-/*    &:hover {*/
-/*        color: #6495EDFF;*/
-/*    }*/
 }
-
-
-.liquid-bar {
-
-}
-.liquid-item {
-
-}
-
-/*!* Вложенная стеклянная линза *!*/
-/*.liquid-item*/
-
-/*!* Hover — эффект "стекло поверх стекла" *!*/
-/*.liquid-item*/
-
-/*.liquid-item*/
-
-

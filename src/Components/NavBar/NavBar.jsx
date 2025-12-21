@@ -18,16 +18,3 @@ export function NavBar() {
         </nav>
     )
 }
-
-
-// <div className="liquid-bar">
-//     <div className="liquid-item">
-//         M
-//     </div>
-//     <div className="liquid-item">
-//         S
-//     </div>
-//     <div className="liquid-item">
-//         R
-//     </div>
-// </div>

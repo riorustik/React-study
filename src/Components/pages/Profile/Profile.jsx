@@ -20,7 +20,7 @@ export function Profile() {
                       styleName='bottomRightArticle'
                       title='Окружение'
                       description='Чем полезны наши враги?'/>
-            {/*<AddPost/>*/}
+
         </section>
     )
 }

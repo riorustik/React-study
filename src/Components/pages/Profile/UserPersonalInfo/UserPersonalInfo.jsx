@@ -15,7 +15,7 @@ export function UserPersonalInfo() {
                 <p>Фронтенд разработчик, в поисках работы демонстриющий свои навыки прямо сейчас пока вы читаете этот
                     текст</p>
 
-                <Link to='/Profile/Posts' className={style.button}> Создать запись</Link>
+                <Link to='/Profile/Posts' className={style.button}> Перейти к записям</Link>
             </div>
         </div>
     )

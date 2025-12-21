@@ -6,7 +6,7 @@ import {Chats} from "./Components/pages/Chats/Chats";
 import {BrowserRouter, Route, Routes} from "react-router";
 import {AddPost} from "./Components/pages/Profile/AddPost/AddPost";
 
-function App() {
+function App({chatsPageData, postsPageData}) {
     return (
         <BrowserRouter>
             <div className="App-wrapper">
@@ -19,11 +19,11 @@ function App() {
                         <Route path='/Profile'
                                element={<Profile />}/>
                         <Route path='/Profile/Posts'
-                               element={<AddPost />}/>
+                               element={<AddPost postsPageData={postsPageData}/>}/>
                         <Route path='/Chats'
-                               element={<Chats />}/>
+                               element={<Chats chatsPageData={chatsPageData}/>}/>
                         <Route path='/Chats/:id'
-                               element={<Chats />}/>
+                               element={<Chats chatsPageData={chatsPageData} />}/>
                     </Routes>
                 </main>
             </div>

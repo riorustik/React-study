@@ -2,20 +2,7 @@ import React from "react";
 import {Post} from "./Post/Post";
 import style from "./AddPost.module.css";
 
-export function AddPost() {
-
-
-    let postsData = [
-        {id: 1, message: 'Hi', likesCount: 23},
-        {id: 2, message: 'How are you?', likesCount: 4},
-        {id: 2, message: 'How are you?', likesCount: 4},
-
-        {id: 2, message: 'How are you?', likesCount: 4},
-        {id: 2, message: 'How are you?', likesCount: 4},
-        {id: 2, message: 'How are you?', likesCount: 4},
-        {id: 2, message: 'How are you?', likesCount: 4},
-
-    ]
+export function AddPost({postsPageData}) {
 
     return (
         <section className={style.posts}>
@@ -28,7 +15,8 @@ export function AddPost() {
             </div>
             <section className={style.postsList}>
                 {
-                    postsData.map(obj => <Post likeCount={postsData.likesCount} textPost={postsData.message}/>)
+                    postsPageData.postsData.map(obj => <Post likeCount={obj.likesCount}
+                                               textPost={obj.message}/>)
                 }
             </section>
         </section>

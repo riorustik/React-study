@@ -8,9 +8,10 @@
     background-size: cover;
     background-position: center;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 250px 2fr;
     padding: 15px;
     grid-column-gap: 15px;
+    width: 100%;
 
 }
 
@@ -31,7 +32,7 @@
     color: white;
 
     & h1 {
-        font-size: 50px;
+        /*font-size: 60px;*/
 
         & span{
             color: #dcf92f;
@@ -39,7 +40,8 @@
     }
 
     & p{
-        width: 50%;
+        width: 70%;
+        font-size: 16px;
     }
 }
 

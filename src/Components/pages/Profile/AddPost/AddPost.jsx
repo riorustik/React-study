@@ -2,7 +2,7 @@ import React from "react";
 import {Post} from "./Post/Post";
 import style from "./AddPost.module.css";
 
-export function AddPost({postsPageData}) {
+export function AddPost({state}) {
 
     return (
         <section className={style.posts}>
@@ -15,7 +15,7 @@ export function AddPost({postsPageData}) {
             </div>
             <section className={style.postsList}>
                 {
-                    postsPageData.postsData.map(obj => <Post likeCount={obj.likesCount}
+                    state.postsData.map(obj => <Post likeCount={obj.likesCount}
                                                textPost={obj.message}/>)
                 }
             </section>

@@ -6,7 +6,7 @@ import {Chats} from "./Components/pages/Chats/Chats";
 import {BrowserRouter, Route, Routes} from "react-router";
 import {AddPost} from "./Components/pages/Profile/AddPost/AddPost";
 
-function App({chatsPageData, postsPageData}) {
+function App({state}) {
     return (
         <BrowserRouter>
             <div className="App-wrapper">
@@ -15,15 +15,15 @@ function App({chatsPageData, postsPageData}) {
                 <main className='App-content'>
                     <Routes>
                         <Route path='/'
-                               element={<Profile />}/>
+                               element={<Profile/>}/>
                         <Route path='/Profile'
-                               element={<Profile />}/>
+                               element={<Profile/>}/>
                         <Route path='/Profile/Posts'
-                               element={<AddPost postsPageData={postsPageData}/>}/>
+                               element={<AddPost state={state.profile}/>}/>
                         <Route path='/Chats'
-                               element={<Chats chatsPageData={chatsPageData}/>}/>
+                               element={<Chats state={state.chats}/>}/>
                         <Route path='/Chats/:id'
-                               element={<Chats chatsPageData={chatsPageData} />}/>
+                               element={<Chats state={state.chats}/>}/>
                     </Routes>
                 </main>
             </div>

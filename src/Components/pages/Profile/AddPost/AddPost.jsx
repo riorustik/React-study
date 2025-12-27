@@ -2,12 +2,12 @@ import React from "react";
 import {Post} from "./Post/Post";
 import style from "./AddPost.module.css";
 
-export function AddPost({state}) {
+export function AddPost({state, addPost}) {
     let posts = state.postsData.map(obj => <Post likeCount={obj.likesCount} textPost={obj.message}/>)
     let addPostInput = React.createRef();
-    function addPost() {
 
-        alert(addPostInput.current.value);
+    function btnAddPost() {
+        addPost(addPostInput.current.value);
     }
 
     return (
@@ -18,7 +18,7 @@ export function AddPost({state}) {
             <div className={style.newPost}>
                 <input type="text" ref={addPostInput}/>
                 <button id='btnAdd'
-                        onClick={addPost}>sent
+                        onClick={btnAddPost}>sent
                 </button>
             </div>
             <section className={style.postsList}>

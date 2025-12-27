@@ -25,3 +25,13 @@ export let state = {
         ],
     }
 };
+
+
+export function addPost(post, data = state.profile.postsData){
+    data.push({
+        id: 5,
+        message: post,
+        likesCount: 0
+
+    })
+}

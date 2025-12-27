@@ -4,6 +4,10 @@ import {Chat} from "./Chat/Chat"
 import {Message} from "./Message/Message";
 
 export function Chats({state}) {
+    let addMessageInput = React.createRef();
+    function addMessage(){
+        alert(addMessageInput.current.value);
+    }
 
     return (
         <section className={style.messages}>
@@ -20,6 +24,8 @@ export function Chats({state}) {
                     state.messagesData.map(obj => <Message message={obj.message}
                                                            id={obj.id}/>)
                 }
+                <input type="text" ref={addMessageInput}/>
+                <button onClick={addMessage}>Sent</button>
             </div>
         </section>
     )

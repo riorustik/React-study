@@ -19,7 +19,8 @@ function App({state, addPost}) {
                         <Route path='/Profile'
                                element={<Profile/>}/>
                         <Route path='/Profile/Posts'
-                               element={<AddPost state={state.profile} addPost={addPost}/>}/>
+                               element={<AddPost state={state.profile}
+                                                 addPost={addPost}/>}/>
                         <Route path='/Chats'
                                element={<Chats state={state.chats}/>}/>
                         <Route path='/Chats/:id'

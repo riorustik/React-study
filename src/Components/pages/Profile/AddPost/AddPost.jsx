@@ -8,6 +8,7 @@ export function AddPost({state, addPost}) {
 
     function btnAddPost() {
         addPost(addPostInput.current.value);
+        addPostInput.current.value = ''
     }
 
     return (

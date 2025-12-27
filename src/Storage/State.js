@@ -1,3 +1,5 @@
+import {AppRender} from "../render";
+
 export let state = {
     profile : {
         postsData: [
@@ -32,6 +34,6 @@ export function addPost(post, data = state.profile.postsData){
         id: 5,
         message: post,
         likesCount: 0
-
     })
+    AppRender(state)
 }
